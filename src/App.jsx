@@ -4,6 +4,8 @@ import About from './components/Sections/About';
 import Portfolio from './components/Sections/Portfolio';
 import Services from './components/Sections/Services';
 import Contact from './components/Sections/Contact';
+import Profile from './assets/Profile.jpg';
+
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,13 +48,19 @@ function App() {
                             onClick={() => scrollToSection('#home')}
                             className="flex-shrink-0 flex items-center"
                         >
-                            <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-0.5 mr-3">
-                                <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
-                                    <span className="text-lg font-bold text-gray-700">N</span>
-                                </div>
+
+                          <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-0.5 mr-3">
+                            <div className="w-full h-full bg-white rounded-full overflow-hidden">
+                              <img
+                                src={Profile}
+                                alt="Nemona Hirko"
+                                className="w-full h-full object-cover"
+                              />
                             </div>
+                          </div>
+
                             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                                Nemona
+                                Nemona Hirko
                             </span>
                         </button>
 
