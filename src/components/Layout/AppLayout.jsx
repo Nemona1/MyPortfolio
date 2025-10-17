@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Profile from '../assets/Profile.jpg';
 
 export default function AppLayout({ children }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -166,7 +167,7 @@ export default function AppLayout({ children }) {
                     </div>
                     
                     <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-                        <p>&copy; 2024 Nemona Portfolio. All rights reserved. Built with React & Tailwind CSS</p>
+                        <p>&copy; 2025 Nemona Portfolio. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Profile from '../../assets/Profile.jpg';
 
 export default function Home() {
     const [currentSkill, setCurrentSkill] = useState(0);
@@ -60,12 +61,16 @@ export default function Home() {
             
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                    {/* Profile Image */}
-                    <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
-                        <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
-                            <span className="text-2xl font-bold text-gray-700">N</span>
-                        </div>
+                   <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
+                    <div className="w-full h-full bg-white rounded-full overflow-hidden">
+                        <img
+                        src={Profile}      // 👈 replace with your actual image path
+                        alt="Nemona Hirko"
+                        className="w-full h-full object-cover"
+                        />
                     </div>
+                    </div>
+
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
                         Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Nemona</span>
