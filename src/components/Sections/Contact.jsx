@@ -4,15 +4,27 @@ export default function Contact() {
     const contactInfo = [
         {
             icon: '📧',
-            title: 'Email',
-            value: 'hello@nemona.dev',
-            link: 'mailto:hello@nemona.dev'
+            title: 'Email 1',
+            value: 'nimona2024hirko@gmail.com',
+            link: 'mailto:nimona2024hirko@gmail.com'
+        },
+         {
+            icon: '📧',
+            title: 'Email 2',
+            value: 'nemona2025hirko@gmail.com',
+            link: 'mailto:nemona2025hirko@gmail.com'
         },
         {
             icon: '📱',
-            title: 'Phone',
-            value: '+1 (555) 123-4567',
-            link: 'tel:+15551234567'
+            title: 'Phone 1',
+            value: '+251 948418527',
+            link: 'tel:+251948418527'
+        },
+        {
+            icon: '📱',
+            title: 'Phone 2',
+            value: '+251 928242794',
+            link: 'tel:+251928242794'
         },
         {
             icon: '📍',
