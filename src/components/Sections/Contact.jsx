@@ -8,7 +8,7 @@ export default function Contact() {
             value: 'nimona2024hirko@gmail.com',
             link: 'mailto:nimona2024hirko@gmail.com'
         },
-         {
+        {
             icon: '📧',
             title: 'Email 2',
             value: 'nemona2025hirko@gmail.com',
@@ -41,7 +41,7 @@ export default function Contact() {
             link: 'https://t.me/zimita2025',
             color: 'hover:bg-blue-100 hover:text-blue-600'
         },
-         {
+        {
             name: 'Telegram 2',
             icon: '📱',
             link: 'https://t.me/zimita2024',
@@ -62,7 +62,7 @@ export default function Contact() {
         {
             name: 'Facebook',
             icon: '👥',
-            link: 'https://facebook.com/youruserna',
+            link: 'https://facebook.com/yourusername',
             color: 'hover:bg-blue-100 hover:text-blue-600'
         },
         {
@@ -102,7 +102,7 @@ export default function Contact() {
                                 <a
                                     key={index}
                                     href={info.link}
-                                    className="flex items-center p-4 bg-white rounded-lg hover:bg-blue-50 transition-colors duration-200 group shadow-md"
+                                    className="flex items-center p-4 bg-white rounded-lg hover:bg-blue-50 transition-all duration-200 group shadow-md hover:shadow-lg"
                                 >
                                     <div className="text-2xl mr-4 group-hover:scale-110 transition-transform duration-200">
                                         {info.icon}
@@ -139,7 +139,7 @@ export default function Contact() {
                                     <div className="text-3xl mb-2">
                                         {social.icon}
                                     </div>
-                                    <span className="font-medium text-gray-900 text-center">{social.name}</span>
+                                    <span className="font-medium text-gray-900 text-center text-sm">{social.name}</span>
                                 </a>
                             ))}
                         </div>
@@ -170,16 +170,15 @@ export default function Contact() {
                                 href="https://t.me/zimita2025"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 inline-flex items-center"
+                                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 inline-flex items-center shadow-lg"
                             >
                                 📱 Message on Telegram 1
                             </a>
-
-                             <a
+                            <a
                                 href="https://t.me/zimita2024"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 inline-flex items-center"
+                                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 inline-flex items-center shadow-lg"
                             >
                                 📱 Message on Telegram 2
                             </a>
@@ -187,7 +186,7 @@ export default function Contact() {
                                 href="https://wa.me/251948418527"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 inline-flex items-center"
+                                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-all duration-200 transform hover:scale-105 inline-flex items-center shadow-lg"
                             >
                                 💬 Chat on WhatsApp
                             </a>

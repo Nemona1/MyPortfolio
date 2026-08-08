@@ -13,33 +13,6 @@ export default function Home() {
         { number: '24/7', label: 'Support' }
     ];
 
-    const featuredProjects = [
-        {
-            id: 1,
-            title: "E-Commerce Platform",
-            description: "Full-stack e-commerce solution with React & modern technologies",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-            tags: ["React", "Tailwind CSS", "JavaScript"],
-            link: "#portfolio"
-        },
-        {
-            id: 2,
-            title: "Task Management App",
-            description: "Collaborative project management tool with real-time features",
-            image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-            tags: ["React", "Firebase", "Material UI"],
-            link: "#portfolio"
-        },
-        {
-            id: 3,
-            title: "Weather Dashboard",
-            description: "Real-time weather monitoring application with interactive charts",
-            image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-            tags: ["React", "API Integration", "Chart.js"],
-            link: "#portfolio"
-        }
-    ];
-
     useEffect(() => {
         setIsVisible(true);
         const interval = setInterval(() => {
@@ -61,30 +34,29 @@ export default function Home() {
             
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                   <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
-                    <div className="w-full h-full bg-white rounded-full overflow-hidden">
-                        <img
-                        src={Profile}      // 👈 replace with your actual image path
-                        alt="Nemona Hirko"
-                        className="w-full h-full object-cover"
-                        />
+                    <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1 hover:scale-105 transition-transform duration-300">
+                        <div className="w-full h-full bg-white rounded-full overflow-hidden">
+                            <img
+                                src={Profile}
+                                alt="Nemona Hirko"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
                     </div>
-                    </div>
-
 
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
                         Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Nemona</span>
                     </h1>
                     
-                    <div className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-8 h-16 flex items-center justify-center">
+                    <div className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-8 h-16 flex items-center justify-center flex-wrap">
                         <span className="text-gray-500">I specialize in </span>
-                        <span className="ml-2 text-blue-600 font-semibold min-w-[300px] text-left">
+                        <span className="ml-2 text-blue-600 font-semibold min-w-[250px] md:min-w-[300px] text-left">
                             {skills[currentSkill]}
                         </span>
                     </div>
                     
-                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-                        A passionate frontend developer creating digital solutions that make a difference. 
+                    <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed px-4">
+                        A passionate full-stack developer creating digital solutions that make a difference. 
                         I transform complex ideas into functional, beautiful, and user-friendly applications 
                         using modern technologies.
                     </p>
